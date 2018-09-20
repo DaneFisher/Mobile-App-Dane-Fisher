@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="slender" translatesAutoresizingMaskIntoConstraints="NO" id="xFg-SA-nor">
+                                <rect key="frame" x="0.0" y="-478" width="667" height="1200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xFg-SA-nor" secondAttribute="height" multiplier="1:1" id="fIz-mk-5XH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xFg-SA-nor" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="MCx-Xq-LQO"/>
+                            <constraint firstItem="xFg-SA-nor" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rc6-7e-BuY"/>
+                            <constraint firstAttribute="trailing" secondItem="xFg-SA-nor" secondAttribute="trailing" id="Rj7-RU-PrR"/>
+                            <constraint firstAttribute="bottom" secondItem="xFg-SA-nor" secondAttribute="bottom" id="dAw-sJ-wib"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Rc6-7e-BuY"/>
+                                <exclude reference="Rj7-RU-PrR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="MCx-Xq-LQO"/>
+                                <include reference="Rc6-7e-BuY"/>
+                                <include reference="Rj7-RU-PrR"/>
+                                <exclude reference="dAw-sJ-wib"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slender" width="1200" height="1200"/>
+    </resources>
+</document>

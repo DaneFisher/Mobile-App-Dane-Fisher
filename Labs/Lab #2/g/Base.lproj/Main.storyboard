@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="g" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slender" translatesAutoresizingMaskIntoConstraints="NO" id="XNr-Rs-MF7">
+                                <rect key="frame" x="30" y="176" width="315" height="315"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XNr-Rs-MF7" secondAttribute="height" multiplier="1:1" id="3xQ-Mm-HPr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDIE BANDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oer-O9-tvF">
+                                <rect key="frame" x="106.5" y="20" width="163" height="32.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-Z8-JWo">
+                                <rect key="frame" x="20" y="529.5" width="335" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="603-2A-rvv">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5qk-1Y-hfq">
+                                                <rect key="frame" x="0.0" y="0.0" width="92" height="64"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Band" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASt-bv-8ne">
+                                                        <rect key="frame" x="29.5" y="0.0" width="33" height="30.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Text Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkR-Hy-8lD">
+                                                        <rect key="frame" x="13.5" y="45.5" width="65" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-8d-vxe">
+                                                <rect key="frame" x="102" y="0.0" width="135" height="64"/>
+                                                <subviews>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GIX-zG-E96">
+                                                        <rect key="frame" x="0.0" y="0.0" width="135" height="29"/>
+                                                        <segments>
+                                                            <segment title="White"/>
+                                                            <segment title="Magenta"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="callColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="3IZ-2h-WVB"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ak1-eB-mO6">
+                                                        <rect key="frame" x="0.0" y="36" width="135" height="29"/>
+                                                        <segments>
+                                                            <segment title="Alt-J"/>
+                                                            <segment title="Glass"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="updateBand:" destination="BYZ-38-t0r" eventType="valueChanged" id="0ri-9C-2Md"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TEs-fo-xIy">
+                                        <rect key="frame" x="246" y="0.0" width="89" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Capitalization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Min-pI-Vun">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="23"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-zU-nsF">
+                                                <rect key="frame" x="20" y="33" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="updateCaps:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ayf-eq-i14"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wgo-K1-7ZG">
+                                <rect key="frame" x="20" y="603.5" width="335" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phh-mT-jqL">
+                                        <rect key="frame" x="0.0" y="17.5" width="120" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTY-44-sYU">
+                                        <rect key="frame" x="140" y="17.5" width="25" height="18.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="o5b-MR-alJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="FEa-DD-FDC">
+                                        <rect key="frame" x="183" y="12" width="154" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="g8s-st-x8Q"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="updateSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="eHu-eU-sSl"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETTINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g3-ab-QCK">
+                                <rect key="frame" x="154.5" y="501" width="66" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Learn about two very cool indie-rock bands with one amazing app! One is from England, one from Austin, Texas." textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j72-S2-YER">
+                                <rect key="frame" x="30.5" y="62.5" width="314" height="103.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="RtB-xE-xcw"/>
+                                    <constraint firstAttribute="width" constant="314" id="oYf-z4-FCw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RtB-xE-xcw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="RtB-xE-xcw"/>
+                                        <exclude reference="oYf-z4-FCw"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j72-S2-YER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1hb-Do-6f3"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2xe-B5-qZY"/>
+                            <constraint firstItem="Wgo-K1-7ZG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="361-rJ-YGV"/>
+                            <constraint firstItem="Oer-O9-tvF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3gC-gD-i5A"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Y4-AB-dwM"/>
+                            <constraint firstItem="3g3-ab-QCK" firstAttribute="top" secondItem="XNr-Rs-MF7" secondAttribute="bottom" constant="10" id="5ks-bn-IuJ"/>
+                            <constraint firstItem="ybM-Z8-JWo" firstAttribute="top" secondItem="3g3-ab-QCK" secondAttribute="bottom" constant="10" id="Ehv-as-0ry"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNr-Rs-MF7" secondAttribute="trailing" constant="30" id="FmD-pe-hhj"/>
+                            <constraint firstItem="ybM-Z8-JWo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KsT-58-XQq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wgo-K1-7ZG" secondAttribute="bottom" constant="10" id="MJP-CB-eBv"/>
+                            <constraint firstItem="j72-S2-YER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nfc-xc-DGG"/>
+                            <constraint firstItem="3g3-ab-QCK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RIN-Qy-Bmn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNr-Rs-MF7" secondAttribute="trailing" constant="30" id="SYf-HK-aKH"/>
+                            <constraint firstItem="ybM-Z8-JWo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TdS-dX-0jT"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="top" secondItem="j72-S2-YER" secondAttribute="bottom" constant="10" id="Xs0-R0-Xfy"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="dK2-wN-eVh"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="leading" secondItem="Oer-O9-tvF" secondAttribute="trailing" constant="30" id="dxa-Da-bUm"/>
+                            <constraint firstItem="Oer-O9-tvF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eYs-LE-E57"/>
+                            <constraint firstItem="Wgo-K1-7ZG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ffH-Ce-8K8"/>
+                            <constraint firstItem="XNr-Rs-MF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kAW-j6-3jM"/>
+                            <constraint firstItem="Wgo-K1-7ZG" firstAttribute="top" secondItem="ybM-Z8-JWo" secondAttribute="bottom" constant="10" id="pwu-hw-23R"/>
+                            <constraint firstItem="j72-S2-YER" firstAttribute="top" secondItem="Oer-O9-tvF" secondAttribute="bottom" constant="10" id="q0r-Sz-QgH"/>
+                            <constraint firstItem="j72-S2-YER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q63-O4-hgG"/>
+                            <constraint firstItem="Oer-O9-tvF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xIj-Es-7zZ"/>
+                            <constraint firstItem="3g3-ab-QCK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xyX-9B-t9g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SYf-HK-aKH"/>
+                                <exclude reference="1hb-Do-6f3"/>
+                                <exclude reference="3gC-gD-i5A"/>
+                                <exclude reference="dK2-wN-eVh"/>
+                                <exclude reference="dxa-Da-bUm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="FmD-pe-hhj"/>
+                                <include reference="SYf-HK-aKH"/>
+                                <include reference="1hb-Do-6f3"/>
+                                <exclude reference="Nfc-xc-DGG"/>
+                                <exclude reference="q63-O4-hgG"/>
+                                <include reference="3gC-gD-i5A"/>
+                                <exclude reference="eYs-LE-E57"/>
+                                <exclude reference="xIj-Es-7zZ"/>
+                                <exclude reference="2xe-B5-qZY"/>
+                                <include reference="dK2-wN-eVh"/>
+                                <include reference="dxa-Da-bUm"/>
+                                <exclude reference="kAW-j6-3jM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="RIN-Qy-Bmn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="TdS-dX-0jT"/>
+                                <exclude reference="5ks-bn-IuJ"/>
+                                <exclude reference="xyX-9B-t9g"/>
+                                <exclude reference="ffH-Ce-8K8"/>
+                                <exclude reference="Xs0-R0-Xfy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="albumCover" destination="XNr-Rs-MF7" id="LMm-Sf-LiB"/>
+                        <outlet property="bandName" destination="Oer-O9-tvF" id="hkY-a8-z5d"/>
+                        <outlet property="capitalSwitch" destination="aTh-zU-nsF" id="0J0-fQ-DtF"/>
+                        <outlet property="colorControl" destination="GIX-zG-E96" id="qJc-W4-b0a"/>
+                        <outlet property="fontSizeLabel" destination="vTY-44-sYU" id="S9Z-Cf-wSj"/>
+                        <outlet property="imageControl" destination="ak1-eB-mO6" id="t6Q-sd-YxN"/>
+                        <outlet property="text" destination="j72-S2-YER" id="P0q-Yg-zWv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.523238380809602" y="37.600000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slender" width="1200" height="1200"/>
+    </resources>
+</document>
