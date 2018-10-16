@@ -104,6 +104,16 @@ class FirstViewController: UIViewController {
         
     }
     
+//========================================================
+    
+    @IBAction func rulesButton(_ sender: UIButton) {
+        if let url = URL(string: "https://danefisher972950154.files.wordpress.com/2018/09/intrigue.pdf") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+//========================================================
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
