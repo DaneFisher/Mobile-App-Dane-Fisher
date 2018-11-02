@@ -14,13 +14,13 @@
 		3571A523216FBD8D0076F121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3571A521216FBD8D0076F121 /* LaunchScreen.storyboard */; };
 		3571A52D216FD2F20076F121 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571A52C216FD2F20076F121 /* BaseTabBarController.swift */; };
 		35CCDC88217595DA0035198B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CCDC87217595DA0035198B /* Assets.xcassets */; };
-		35D9D7F721759A84000B60A3 /* Russian.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35D9D7F621759A84000B60A3 /* Russian.ttf */; };
 		35D9D7F92175A24B000B60A3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9D7F82175A24B000B60A3 /* ThirdViewController.swift */; };
 		35D9D7FB2175A25F000B60A3 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9D7FA2175A25F000B60A3 /* FourthViewController.swift */; };
 		35D9D7FF2175A2A2000B60A3 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D9D7FE2175A2A2000B60A3 /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352E9081218BDB5000909C5F /* Russian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Russian.ttf; path = ../../Russian.ttf; sourceTree = "<group>"; };
 		3571A513216FBD8D0076F121 /* Intrigue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intrigue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3571A516216FBD8D0076F121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3571A518216FBD8D0076F121 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +30,6 @@
 		3571A524216FBD8D0076F121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3571A52C216FD2F20076F121 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		35CCDC87217595DA0035198B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		35D9D7F621759A84000B60A3 /* Russian.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Russian.ttf; path = ../../../../../Russian.ttf; sourceTree = "<group>"; };
 		35D9D7F82175A24B000B60A3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		35D9D7FA2175A25F000B60A3 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		35D9D7FE2175A2A2000B60A3 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +75,8 @@
 				35D9D7FE2175A2A2000B60A3 /* FifthViewController.swift */,
 				3571A51C216FBD8D0076F121 /* Main.storyboard */,
 				3571A521216FBD8D0076F121 /* LaunchScreen.storyboard */,
+				352E9081218BDB5000909C5F /* Russian.ttf */,
 				3571A524216FBD8D0076F121 /* Info.plist */,
-				35D9D7F621759A84000B60A3 /* Russian.ttf */,
 			);
 			path = Intrigue;
 			sourceTree = "<group>";
@@ -140,7 +139,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D9D7F721759A84000B60A3 /* Russian.ttf in Resources */,
 				3571A523216FBD8D0076F121 /* LaunchScreen.storyboard in Resources */,
 				35CCDC88217595DA0035198B /* Assets.xcassets in Resources */,
 				3571A51E216FBD8D0076F121 /* Main.storyboard in Resources */,
