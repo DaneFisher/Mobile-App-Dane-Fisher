@@ -3,6 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        android:ThemeOverlay.Material.Dark.ActionBar
+
+    </style>
+
+    <style name="Affirm" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:colorPrimary">@color/accent_material_light</item>
+        <item name="android:colorAccent">@color/accent_material_light</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:textColorPrimary">@color/primary_material_light</item>
     </style>
 
 </resources>
