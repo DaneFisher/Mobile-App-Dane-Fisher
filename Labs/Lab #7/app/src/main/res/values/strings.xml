@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab #7</string>
+    <string name="title">14er Hike Selector</string>
+    <string name="hiketype">Choose your hike type</string>
+    <string name="hikeButton">Find Hike</string>
+    <string-array name="hike">
+        <item>Easy</item>
+        <item>Long</item>
+        <item>Exposed</item>
+        <item>Technical</item>
+        <item>Close</item>
+    </string-array>
+    <string name="suggested_fourteener">This is your suggested fourteener</string>
+</resources>
