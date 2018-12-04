@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/mainicon"
+        android:title="@string/title_main" />
+
+    <item
+        android:id="@+id/navigation_voter"
+        android:icon="@drawable/votericon"
+        android:title="@string/title_voter" />
+
+    <item
+        android:id="@+id/navigation_initiator"
+        android:icon="@drawable/initiatoricon"
+        android:title="@string/title_initiator" />
+
+    <item
+        android:id="@+id/navigation_spreader"
+        android:icon="@drawable/spreadericon"
+        android:title="@string/title_spreader" />
+
+    <item
+        android:id="@+id/navigation_subject"
+        android:icon="@drawable/subjecticon"
+        android:title="@string/title_subject" />
+
+</menu>

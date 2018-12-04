@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intrigue</string>
+    <string name="title_main">Main</string>
+    <string name="title_voter">Voter</string>
+    <string name="title_initiator">Initiator</string>
+    <string name="title_spreader">Spreader</string>
+    <string name="title_subject">Subject</string>
+</resources>
