@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Initiator"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/initiator" />
+
+    <Button
+        android:id="@+id/addBelieves"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="86dp"
+        android:onClick="addBelieve"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtractBelieves"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subtractDis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="75dp"
+        android:onClick="subtractDis"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addDis"
+        app:layout_constraintEnd_toStartOf="@+id/addDis"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="45dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/subtractDis"
+        app:layout_constraintTop_toBottomOf="@+id/subtractDis" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="45dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/subtractBelieves"
+        app:layout_constraintTop_toBottomOf="@+id/subtractBelieves" />
+
+    <Button
+        android:id="@+id/addDis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="addDis"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/tv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtractDis" />
+
+    <Button
+        android:id="@+id/subtractBelieves"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="82dp"
+        android:onClick="subtractBelieve"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addBelieves"
+        app:layout_constraintEnd_toStartOf="@+id/addBelieves"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="@+id/addDis" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/addBelieves"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

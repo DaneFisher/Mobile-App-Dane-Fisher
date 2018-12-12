@@ -18,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Voter"
+            android:label="@string/title_activity_voter" />
+        <activity
+            android:name=".Initiator"
+            android:label="@string/title_activity_initiator" />
+        <activity
+            android:name=".Spreader"
+            android:label="@string/title_activity_spreader" />
+        <activity
+            android:name=".Subject"
+            android:label="@string/title_activity_subject"></activity>
     </application>
 
 </manifest>

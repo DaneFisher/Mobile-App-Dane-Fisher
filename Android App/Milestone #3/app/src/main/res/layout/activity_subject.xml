@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subject"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="603dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/subject"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/btbplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="btbplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/btb-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="btbmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/btbpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <TextView
+        android:id="@+id/btbnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <Button
+        android:id="@+id/btgplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="btgplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <Button
+        android:id="@+id/btg-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="btgmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/btgpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <TextView
+        android:id="@+id/btgnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/bfbplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="bfbplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <Button
+        android:id="@+id/bfb-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="bfbmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/bfbpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:id="@+id/bfbnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <Button
+        android:id="@+id/bfgplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="bfgplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/bfg-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="bfgmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <TextView
+        android:id="@+id/bfgpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <TextView
+        android:id="@+id/bfgnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <Button
+        android:id="@+id/dtbplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="dtbplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/dtb-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="dtbmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <TextView
+        android:id="@+id/dtbpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/dtbnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <Button
+        android:id="@+id/dtgplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="dtgplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/dtg-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="dtgmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <TextView
+        android:id="@+id/dtgpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="316dp" />
+
+    <TextView
+        android:id="@+id/dtgnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="228dp" />
+
+    <Button
+        android:id="@+id/dfbplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="dfbplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <Button
+        android:id="@+id/dfb-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="dfbmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="507dp" />
+
+    <TextView
+        android:id="@+id/dfbpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:id="@+id/dfbnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <Button
+        android:id="@+id/dfgplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="52dp"
+        android:layout_height="67dp"
+        android:onClick="dfgplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <Button
+        android:id="@+id/dfg-"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="67dp"
+        android:onClick="dfgmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+    <TextView
+        android:id="@+id/dfgpointplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <TextView
+        android:id="@+id/dfgnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        tools:layout_editor_absoluteX="228dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+</android.support.constraint.ConstraintLayout>

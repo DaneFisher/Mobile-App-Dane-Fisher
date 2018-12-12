@@ -5,4 +5,11 @@
     <string name="title_initiator">Initiator</string>
     <string name="title_spreader">Spreader</string>
     <string name="title_subject">Subject</string>
+    <string name="title_activity_voter">Voter</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_initiator">Initiator</string>
+    <string name="title_activity_spreader">Spreader</string>
+    <string name="title_activity_subject">Subject</string>
 </resources>

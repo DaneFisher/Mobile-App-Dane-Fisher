@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Spreader"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="603dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spreader" />
+
+    <Button
+        android:id="@+id/btplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="220dp"
+        android:onClick="btplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtractBelieves2"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/subtractBelieves2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="89dp"
+        android:onClick="btmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btplus"
+        app:layout_constraintEnd_toStartOf="@+id/btplus"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="105dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/tv4"
+        app:layout_constraintEnd_toEndOf="@+id/btplus"
+        app:layout_constraintStart_toEndOf="@+id/btplus"
+        app:layout_constraintTop_toTopOf="@+id/btplus" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toStartOf="@+id/subtractBelieves2"
+        app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/bfplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="bfplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/tv4"
+        app:layout_constraintEnd_toEndOf="@+id/btplus"
+        app:layout_constraintStart_toEndOf="@+id/subtractBelieves2"
+        app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+    <Button
+        android:id="@+id/bfmin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:onClick="bfmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bfplus"
+        app:layout_constraintEnd_toStartOf="@+id/bfplus"
+        app:layout_constraintStart_toStartOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/dtplus"
+        app:layout_constraintEnd_toEndOf="@+id/bfplus"
+        app:layout_constraintStart_toEndOf="@+id/bfplus" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/dtmin"
+        app:layout_constraintEnd_toStartOf="@+id/dtplus" />
+
+    <Button
+        android:id="@+id/dtplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:onClick="dtplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dfplus"
+        app:layout_constraintStart_toEndOf="@+id/bfmin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dtmin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:onClick="dtmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dtplus"
+        app:layout_constraintEnd_toStartOf="@+id/dtplus"
+        app:layout_constraintStart_toStartOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/dtplus"
+        app:layout_constraintStart_toEndOf="@+id/dtplus"
+        app:layout_constraintTop_toBottomOf="@+id/dtplus" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="31dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintEnd_toStartOf="@+id/dfplus"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <Button
+        android:id="@+id/dfplus"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="dfplu"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/tv8"
+        app:layout_constraintEnd_toEndOf="@+id/bfplus"
+        app:layout_constraintStart_toStartOf="@+id/bfplus"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <Button
+        android:id="@+id/bfmin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:onClick="dfmin"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dfplus"
+        app:layout_constraintEnd_toStartOf="@+id/dfplus"
+        app:layout_constraintStart_toStartOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="@+id/dfplus"
+        app:layout_constraintStart_toEndOf="@+id/dfplus" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="@+id/bfmin" />
+
+</android.support.constraint.ConstraintLayout>

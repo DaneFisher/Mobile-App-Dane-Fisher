@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Voter"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voter" />
+
+    <Button
+        android:id="@+id/plusCorrect"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="addCorrect"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minusCorrect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusIncorrect"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="8dp"
+        android:onClick="subtractIncorrect"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plusIncorrect"
+        app:layout_constraintEnd_toStartOf="@+id/plusIncorrect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="117dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/plusCorrect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plusIncorrect"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="addIncorrect"
+        android:text="+"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/tv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minusIncorrect" />
+
+    <Button
+        android:id="@+id/minusCorrect"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="7dp"
+        android:onClick="subtractCorrect"
+        android:text="-"
+        android:textAlignment="viewStart"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBaseline_toBaselineOf="@+id/plusCorrect"
+        app:layout_constraintEnd_toStartOf="@+id/plusCorrect"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintStart_toEndOf="@+id/plusIncorrect"
+        app:layout_constraintTop_toBottomOf="@+id/plusIncorrect" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="43dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minusCorrect" />
+
+</android.support.constraint.ConstraintLayout>
