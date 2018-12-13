@@ -98,6 +98,10 @@ public class Initiator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_initiator);
 
+        //get intent
+        Intent intent1 = getIntent();
+        total = intent1.getDoubleExtra("totalScore",0);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.getMenu().findItem(R.id.navigation_initiator).setChecked(true);

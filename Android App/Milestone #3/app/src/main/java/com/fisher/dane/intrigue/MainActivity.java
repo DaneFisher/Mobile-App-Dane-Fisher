@@ -1,12 +1,14 @@
 package com.fisher.dane.intrigue;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -124,6 +126,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void openRules(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://danefisher972950154.files.wordpress.com/2018/09/intrigue.pdf"));
+        startActivity(intent);
+    }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         //save current state
@@ -148,8 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
         //check for recovering the instance state
         if (savedInstanceState !=null){
-            total = savedInstanceState.getDouble("total");
-
+            total = savedInstanceState.getDouble("totalScore");
             textView5.setText(String.valueOf(total));
         }
 

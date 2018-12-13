@@ -39,395 +39,450 @@
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintStart_toEndOf="@+id/btb-"
+        app:layout_constraintTop_toBottomOf="@+id/btgplus" />
 
     <Button
         android:id="@+id/btb-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
         android:onClick="btbmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btg-" />
 
     <TextView
-        android:id="@+id/btbpointplus"
+        android:id="@+id/tv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
 
     <TextView
-        android:id="@+id/btbnum"
+        android:id="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
     <Button
         android:id="@+id/btgplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginTop="7dp"
         android:onClick="btgplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintStart_toEndOf="@+id/btg-"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btg-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
         android:onClick="btgmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/btgpointplus"
+        android:id="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/btgnum"
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bfbplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginStart="1dp"
         android:onClick="bfbplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="221dp" />
+        app:layout_constraintStart_toEndOf="@+id/bfb-"
+        app:layout_constraintTop_toBottomOf="@+id/bfgplus" />
 
     <Button
         android:id="@+id/bfb-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="5dp"
         android:onClick="bfbmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="224dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfg-" />
 
     <TextView
-        android:id="@+id/bfbpointplus"
+        android:id="@+id/tv8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
 
     <TextView
-        android:id="@+id/bfbnum"
+        android:id="@+id/tv7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
 
     <Button
         android:id="@+id/bfgplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginTop="13dp"
         android:onClick="bfgplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintStart_toEndOf="@+id/bfg-"
+        app:layout_constraintTop_toBottomOf="@+id/btbplus" />
 
     <Button
         android:id="@+id/bfg-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
         android:onClick="bfgmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="149dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btb-" />
 
     <TextView
-        android:id="@+id/bfgpointplus"
+        android:id="@+id/tv6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
 
     <TextView
-        android:id="@+id/bfgnum"
+        android:id="@+id/tv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="172dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
 
     <Button
         android:id="@+id/dtbplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
         android:onClick="dtbplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintStart_toEndOf="@+id/dtb-"
+        app:layout_constraintTop_toBottomOf="@+id/dtgplus" />
 
     <Button
         android:id="@+id/dtb-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="5dp"
         android:onClick="dtbmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="365dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtg-" />
 
     <TextView
-        android:id="@+id/dtbpointplus"
+        android:id="@+id/tv12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv10" />
 
     <TextView
-        android:id="@+id/dtbnum"
+        android:id="@+id/tv11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
 
     <Button
         android:id="@+id/dtgplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
         android:onClick="dtgplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintStart_toEndOf="@+id/dtg-"
+        app:layout_constraintTop_toBottomOf="@+id/bfbplus" />
 
     <Button
         android:id="@+id/dtg-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="4dp"
         android:onClick="dtgmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="293dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfb-" />
 
     <TextView
-        android:id="@+id/dtgpointplus"
+        android:id="@+id/tv10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="316dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/dtgnum"
+        android:id="@+id/tv9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="228dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/dfbplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
         android:onClick="dfbplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="504dp" />
+        app:layout_constraintStart_toEndOf="@+id/dfb-"
+        app:layout_constraintTop_toBottomOf="@+id/dfgplus" />
 
     <Button
         android:id="@+id/dfb-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="7dp"
         android:onClick="dfbmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="507dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dfg-" />
 
     <TextView
-        android:id="@+id/dfbpointplus"
+        android:id="@+id/tv16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv14" />
 
     <TextView
-        android:id="@+id/dfbnum"
+        android:id="@+id/tv15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv13" />
 
     <Button
         android:id="@+id/dfgplus"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="52dp"
         android:layout_height="67dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
         android:onClick="dfgplu"
         android:text="+"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="437dp" />
+        app:layout_constraintStart_toEndOf="@+id/dfg-"
+        app:layout_constraintTop_toBottomOf="@+id/dtbplus" />
 
     <Button
         android:id="@+id/dfg-"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="67dp"
+        android:layout_marginStart="95dp"
         android:onClick="dfgmin"
         android:text="-"
         android:textAlignment="viewStart"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="432dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtb-" />
 
     <TextView
-        android:id="@+id/dfgpointplus"
+        android:id="@+id/tv14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="70dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="455dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv12" />
 
     <TextView
-        android:id="@+id/dfgnum"
+        android:id="@+id/tv13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="165dp"
         android:text="0"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="455dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv11" />
 
 </android.support.constraint.ConstraintLayout>

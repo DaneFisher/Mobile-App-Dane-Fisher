@@ -101,7 +101,7 @@ public class Spreader extends AppCompatActivity {
 
     public void dtmin(View view) {
         total = + 0.5;
-        disbelievesfNum--;
+        disbelievestNum--;
         disbelievesfPoints +=.5;
         TextView textview5 = findViewById(R.id.tv5);
         textview5.setText(String.valueOf(disbelievestNum));
@@ -143,6 +143,10 @@ public class Spreader extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spreader);
+
+        //get intent
+        Intent intent1 = getIntent();
+        total = intent1.getDoubleExtra("totalScore",0);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
