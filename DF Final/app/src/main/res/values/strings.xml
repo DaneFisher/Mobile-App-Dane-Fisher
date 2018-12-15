@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DF Final</string>
+    <string name="title">Build My Pizza</string>
+    <string name="radioThin">thin</string>
+    <string name="radioThick">thick</string>
+    <string name="gf">Gluten Free</string>
+    <string name="pizzaButton">Pizza</string>
+    <string name="findPizzaButton">Find Pizza</string>
+    <string name="pizzaEditText">Enter Pizza Name</string>
+    <string name="title_activity_recieve_pizza">recievePizza</string>
+    <string name="website">Website</string>
+    <string name="size">Size:</string>
+    <string name="crust">Crust:</string>
+    <string-array name="spinner">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+</resources>
